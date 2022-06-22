@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Automation  Suite" thread-count="3" parallel="tests" >
+
+    <test name="RegTest" parallel="tests">
+        <classes>
+            <class name="AirbnbProject.RegistrationPage" />
+        </classes>
+    </test>
+
+    <test name="Login Test" parallel="tests">
+        <classes>
+            <class name="AirbnbProject.LoginTest" />
+        </classes>
+    </test>
+
+    <test name="ListingPage" parallel="tests">
+        <classes>
+            <class name="AirbnbProject.ListingPageTest" />
+        </classes>
+    </test>
+</suite>
+
+
+
+
